@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@media (max-width: 856px) {
+  .grid-box {
+    grid-template-columns: 0.7fr !important;
+    justify-content: center !important;
+  }
+  
+  #projects {
+    height: 330vh !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #education-1, #education-2 {
+    flex-direction: column;
+  }
+  
+  #education {
+    height: 150vh !important;
+  }
+  
+  .projects-section-title {
+    font-size: 1.9rem !important;
+  }
+  
+  #projects {
+    height: 290vh !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #projects {
+    height: 265vh !important;
+  }
+}
+
+
+:root {
+  --main-blue: #00A4DC;
+  --main-gray: rgb(141, 145, 146);
+  --main-white: #F0F0F0;
+  --main-red: #FA9C89;
+  --main-green: #45DEA6;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0px;
+  font-family: "Josefin Sans","Shadows Into Light","Caveat", monospace, sans-serif, Arial, Helvetica;
+}
+
+#navbar {
+  background-color: var(--main-blue);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1rem 0 0;
+  font-size: 1.3rem;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-white);
+  padding: 1rem;
+}
+
+#navbar a:hover {
+  background-color: var(--main-red);
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: var(--main-gray);
+  color: var(--main-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#welcome-section > h1 {
+  margin-bottom: 0;
+  font-size: 2.6rem;
+}
+
+#welcome-section > p {
+  margin: 1rem auto 0 auto;
+  font-style: italic;
+}
+
+#education {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#education-1, #education-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#education-1 p, #education-2 p {
+  font-family: "Shadows Into Light", "Caveat", "Josefin Sans", monospace, sans-serif, Arial, Helvetica;
+  font-size: 1.9rem;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+
+.education-img-1 {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+.education-img-2 {
+  display: block;
+  width: 200px;
+  height: auto;
+  padding: 0 50px 0 50px; 
+}
+
+#projects {
+  background-color: var(--main-gray);
+  color: var(--main-white);
+  height: 200vh;
+  width: 100%;
+}
+
+.projects-section-title {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  /*grid-gap: 1st for row gap 2nd for column gap*/
+  grid-gap: 3rem;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--main-white);
+  border-radius: 0.7rem;
+  text-decoration: none;
+}
+
+.project-img {
+  height: calc(100% - 4rem);
+  width: 100%;
+}
+
+.project-tile {
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.code {
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.4s ease-out;
+}
+
+.project:hover .code {
+  color: var(--main-red);
+}
+
+#contact {
+  font-size: 2rem;
+  font-family: "Caveat", "Josefin Sans","Shadows Into Light",monospace, sans-serif, Arial, Helvetica;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding-right: 2.3rem;
+  font-size: 2.3rem;
+  transition: transform 0.3s ease-out;
+  text-shadow: 1px 1px 1px black;
+}
+
+.btn:hover {
+  transform: translateY(8px);
+  color: var(--main-red);
+}
+
+footer {
+  background-color: var(--main-gray);
+  color: var(--main-white);
+  font-size: 1.7rem;
+  height: 20vh;
+  min-height: 20vh;
+  text-align: right;
+}
+
+footer > p {
+  padding-top: 1rem;
+}
