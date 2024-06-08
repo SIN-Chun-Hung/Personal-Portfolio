@@ -8,8 +8,10 @@ The content of this page is half true half fake. Just for the project purpose on
 
 This page owner information.
 
-SIN,Chun Hung SIMON.
+SIN,Chun Hung SIMON. 
 
-HKUST graduate.
+HKUST Graduate. 
 
-Mathematician. Developer.
+Major in Mathematics.
+
+A Lifelong Learner.
